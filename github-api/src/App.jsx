@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <h1>Github profiles</h1>
+      <h1>Github Profiles</h1>
       <button className="btn" onClick={() => setRefresh(refresh + 1)}>
         Refresh
       </button>
