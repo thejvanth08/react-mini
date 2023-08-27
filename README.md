@@ -1,2 +1,3 @@
 # react-mini
-Booklist website: https://booklist-mini.netlify.app/
+Booklist: https://booklist-mini.netlify.app/
+Github API: https://github-profilesapi.netlify.app/ 
