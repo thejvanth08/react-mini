@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f0f6f6;
+  font-family: Arial, Helvetica, sans-serif;
+  /* it also centers the image */
+  text-align: center;
+}
+
+h1 {
+  margin-block: 2rem;
+}
+
+section {
+  background-color: #bbe6e4;
+  width: 80vw;
+  margin-top: 1.6rem;
+  margin-inline: auto;
+  padding: 30px 25px;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-img {
+  max-width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+
+.user {
+  width: 60%;
+  max-width: 400px;
+  background-color: #42bfdd;
+  padding: 25px 15px;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+  transition: transform 0.5s, box-shadow 0.8s;
+}
+
+.user:hover {
+  transform: rotate(3deg);
+  box-shadow: 3px 3px 8px #ff66b3;
+}
+
+.user:hover .user-img {
+  transform: rotate(-5deg);
+}
+
+.user-name {
+  margin-block: 0.5rem 0.8rem;
+  font-size: 1.5rem;
+  color: #ff66b3;
+}
+
+.emoji {
+  font-size: 1.8rem;
+  background-color: #f0f6f6;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.btn {
+  background-color: #ff66b3;
+  border: none;
+  border-radius: 15px 5px;
+  padding: 12px 18px;
+  font-size: 0.9rem;
+  color: #f0f6f6;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.6s;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+
+  .user-img {
+    width: 150px;
+    height: 150px;
+  }
+}
